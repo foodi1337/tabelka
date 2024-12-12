@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane komputerowe</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 3px solid red; /* Grubość linii */
+            padding: 12px;
+            font-size: 14px;
+            font-weight: bold; /* Grubość tekstu */
+        }
+        th {
+            background-color: black;
+            color: white;
+        }
+        td {
+            font-weight: bold;
+        }
+        .highlight-intel {
+            color: #00b0f0; /* Kolor dla procesorów Intel */
+        }
+        .highlight-amd {
+            color: #92d050; /* Kolor dla procesorów AMD */
+        }
+        tr:nth-child(odd) td {
+            background-color: #e6f2ff; /* Oryginalny jasny kolor wierszy */
+        }
+        tr:nth-child(even) td {
+            background-color: #d9eaf7;
+        }
+        td:nth-child(7) {
+            background-color: #c2dbef; /* Kolor tła dla kolumny "Status" */
+        }
+        caption {
+            font-weight: bold;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            padding: 8px;
+            border: 3px solid red;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-top: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Dane komputerowe - Matvii Voloshchuk 2Kg2</caption>
+        <thead>
+            <tr>
+                <th>Model procesora:</th>
+                <th>Taktowanie bazowe</th>
+                <th>Liczba rdzeni:</th>
+                <th>Liczba wątków:</th>
+                <th>TDP</th>
+                <th>Typ gniazda:</th>
+                <th>Status:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="highlight-intel">Intel Core i9-13900K</td>
+                <td>3.0 GHz</td>
+                <td>24</td>
+                <td>32</td>
+                <td>125W</td>
+                <td>LGA1700</td>
+                <td rowspan="5">Produkcja</td>
+            </tr>
+            <tr>
+                <td class="highlight-amd">AMD Ryzen 9 7950X</td>
+                <td>4.6 GHz</td>
+                <td>16</td>
+                <td>32</td>
+                <td>170W</td>
+                <td>AM5</td>
+            </tr>
+            <tr>
+                <td class="highlight-intel">Intel Core i7-13700K</td>
+                <td>3.5 GHz</td>
+                <td>16</td>
+                <td>24</td>
+                <td>125W</td>
+                <td>LGA1700</td>
+            </tr>
+            <tr>
+                <td class="highlight-amd">AMD Ryzen 7 7700X</td>
+                <td>4.6 GHz</td>
+                <td>8</td>
+                <td>16</td>
+                <td>105W</td>
+                <td>AM5</td>
+            </tr>
+            <tr>
+                <td class="highlight-intel">Intel Core i5-13600K</td>
+                <td>3.5 GHz</td>
+                <td>14</td>
+                <td>20</td>
+                <td>125W</td>
+                <td>LGA1700</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7" class="footer">Dane komputerowe</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
